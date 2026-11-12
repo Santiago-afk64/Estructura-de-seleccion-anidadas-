@@ -10,7 +10,7 @@ Algoritmo Conversor()
   Escribir "Seleccione una opción:"
   Leer op
 
-  Segun opcion Hacer
+  Segun op hacer
     1:
       Escribir "Ingrese los kilómetros:"
       Leer valor

@@ -1,0 +1,23 @@
+Algoritmo Cafeteria()
+  Definir op como entero
+
+  Escribir "----Menú----"
+  Escribir "1. Café....$1.50"
+  Escribir "2. Jugo....$1.20"
+  Escribir "3. Sandwich....$2.50"
+  Escribir "4. Salir"
+  Leer op
+
+  Segun op hacer
+    1:
+      Escribir "El precio es: $1.50"
+    2:
+      Escribir "El precio es: $1.20"
+    3:
+      Escribir "El precio es: $2.50"
+    4:
+      Escrbir "Hasta luego :D"
+  SiNo
+    Escribir "Error: opcion no valida"
+  FinSegun
+FinAlgoritmo

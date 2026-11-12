@@ -1,0 +1,28 @@
+Algoritmo MedioTransporte()
+  Definir opcion Como Entero
+
+  Escribir "Medio de transporte para recorrer 5 km:"
+  Escribir "1. Bus urbano"
+  Escribir "2. Taxi"
+  Escribir "3. Bicicleta"
+  Escribir "4. Caminar"
+  Escribir "Seleccione una opción:"
+  Leer opcion
+
+  Segun opcion Hacer
+    1:
+      Escribir "Tiempo estimado: 30 minutos"
+      Escribir "Económico, pero depende de paradas y tráfico."
+    2:
+      Escribir "Tiempo estimado: 15 minutos"
+      Escribir "Rápido y cómodo, aunque es la opción más cara."
+    3:
+      Escribir "Tiempo estimado: 25 minutos"
+      Escribir "Saludable y gratuito, pero Loja tiene varias pendientes."
+    4:
+      Escribir "Tiempo estimado: 60 minutos"
+      Escribir "Gratis y saludable, pero toma bastante tiempo."
+    De Otro Modo:
+      Escribir "Opción inválida"
+  FinSegun
+FinAlgoritmo

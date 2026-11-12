@@ -1,0 +1,34 @@
+Algoritmo Conversor()
+  Definir op Como Entero
+  Definir valor, resultado Como Real
+
+  Escribir "---- CONVERSOR ----"
+  Escribir "1. Kilómetros a metros"
+  Escribir "2. Metros a centímetros"
+  Escribir "3. Horas a minutos"
+  Escribir "4. Salir"
+  Escribir "Seleccione una opción:"
+  Leer op
+
+  Segun opcion Hacer
+    1:
+      Escribir "Ingrese los kilómetros:"
+      Leer valor
+      resultado <- valor * 1000
+      Escribir valor, " km = ", resultado, " m"
+    2:
+      Escribir "Ingrese los metros:"
+      Leer valor
+      resultado <- valor * 100
+      Escribir valor, " m = ", resultado, " cm"
+    3:
+      Escribir "Ingrese las horas:"
+      Leer valor
+      resultado <- valor * 60
+      Escribir valor, " h = ", resultado, " min"
+    4:
+      Escribir "¡Hasta pronto!"
+    De Otro Modo:
+      Escribir "Opción inválida"
+  FinSegun
+FinAlgoritmo

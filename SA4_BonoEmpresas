@@ -1,0 +1,27 @@
+Algoritmo BonoEmpresas()
+  Definir antiguedad, sueldo, bono, sueldoTotal Como Real
+  Definir excelente Como Logico
+
+  Escribir "Ingrese los años de antigüedad"
+  Leer antiguedad
+  Escribir "Ingrese el sueldo"
+  Leer sueldo
+  Escribir "¿La evaluación es excelente? (V o F)"
+  Leer excelente
+
+  bono <- 0
+  Si antiguedad > 2 Entonces
+    bono <- sueldo * 0.10
+    Si excelente Entonces
+      bono <- bono + sueldo * 0.05
+    FinSi
+  SiNo
+    Si excelente Entonces
+      bono <- sueldo * 0.05
+    FinSi
+  FinSi
+
+  sueldoTotal <- sueldo + bono
+  Escribir "Bono: $", bono
+  Escribir "Sueldo total: $", sueldoTotal
+FinAlgoritmo

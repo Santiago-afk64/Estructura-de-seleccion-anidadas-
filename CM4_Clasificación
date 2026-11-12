@@ -1,0 +1,22 @@
+Algoritmo Clasificación()
+  Definir letra Como Caracter
+
+  Escribir "Ingrese la letra de calificación (A, B, C, D, F)"
+  Leer letra
+  letra <- Mayusculas(letra)
+
+  Segun letra Hacer
+    "A":
+      Escribir "Rango: 9 - 10"
+    "B":
+      Escribir "Rango: 8 - 8.9"
+    "C":
+      Escribir "Rango: 7 - 7.9"
+    "D":
+      Escribir "Rango: 6 - 6.9"
+    "F":
+      Escribir "Rango: 0 - 5.9"
+    De Otro Modo:
+      Escribir "Letra no válida"
+  FinSegun
+FinAlgoritmo

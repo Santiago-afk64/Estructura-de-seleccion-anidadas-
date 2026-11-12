@@ -1,0 +1,19 @@
+Alogritmo Temperatura_Loja()
+  Definir Temperatura como real
+
+  Escribir "Ingrese la temperatura:"
+  Leer Temperatura
+
+  Si Temperatura < 15 entonces
+    Escribir "Temperatura: Fria"
+  SiNo
+    Si Temperatura <= 25 entonces
+      Escribir "Temperatura: Templado"
+    SiNo
+      Escribir "Temperatura: Calido"
+      Si Temperatura > 30 entonces
+        Escribir "Temperatura: Calor extremo"
+      FinSi
+    FinSi
+  FinSi
+FinAlgoritmo

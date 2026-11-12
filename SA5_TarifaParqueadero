@@ -1,0 +1,23 @@
+Algoritmo TarifaParqueadero()
+  Definir horas, tarifa Como Real
+  Definir Estudiante Como Logico
+
+  Escribir "¿Es estudiante de la UTPL? (V o F)"
+  Leer Estudiante
+  Escribir "Ingrese las horas de permanencia"
+  Leer horas
+
+  tarifa <- horas * 1.00
+  Si Estudiante = verdadero entonces
+    tarifa <- tarifa * 0.50
+    Si horas > 4 Entonces
+      tarifa <- tarifa * 1.20
+    FinSi
+  SiNo
+    Si horas > 6 Entonces
+      tarifa <- tarifa * 1.20
+    FinSi
+  FinSi
+
+  Escribir "Monto a pagar: $", tarifa
+FinAlgoritmo

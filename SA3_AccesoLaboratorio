@@ -1,4 +1,4 @@
-Algoritmo AccesoLaboratorio
+Algoritmo AccesoLaboratorio()
   Definir esEstudiante, tieneCarne, tieneAutorizacion Como Logico
 
   Escribir "¿Es estudiante de la UTPL? (V o F)"

@@ -1,0 +1,24 @@
+Algoritmo AccesoLaboratorio
+  Definir esEstudiante, tieneCarne, tieneAutorizacion Como Logico
+
+  Escribir "¿Es estudiante de la UTPL? (V o F)"
+  Leer esEstudiante
+
+  Si esEstudiante Entonces
+    Escribir "¿Tiene el carné vigente? (V o F)"
+    Leer tieneCarne
+    Si tieneCarne Entonces
+      Escribir "Acceso permitido"
+    SiNo
+      Escribir "Acceso denegado: carné no vigente"
+    FinSi
+  SiNo
+    Escribir "¿Tiene autorización especial del docente? (V o F)"
+    Leer tieneAutorizacion
+    Si tieneAutorizacion Entonces
+      Escribir "Ingreso temporal"
+    SiNo
+      Escribir "Acceso denegado"
+    FinSi
+  FinSi
+FinAlgoritmo

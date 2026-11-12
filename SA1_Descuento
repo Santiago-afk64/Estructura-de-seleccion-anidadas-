@@ -1,0 +1,25 @@
+Algoritmo Descuento()
+  Definir monto, Descuento, m_final como real
+  Definir Estudiante_UTPL como Logico 
+
+  Escribir "Ingrese el monto total"
+  Leer monto
+  Escribir "Es estudiante de la UTPL? (V o F)"
+  Leer Estudiante_UTPL
+  
+  Descuento <- 0
+  Si Estudiante_UTPL = verdadero entonces
+    Descuento <- 0.20
+    Si monto > 30 entonces
+      Descuento <- Descuento + 0.05
+    FinSi
+  SiNo
+    Si monto > 50 entonces
+      Descuento <- 0.10
+    FinSi
+  FinSi
+
+  m_final <- monto * (1 - Descuento)
+  Escribir "El monto a apagar es: $", m_final
+  Escribir "Descuento:", Descuento * 100, "%"
+FinAlgoritmo 
